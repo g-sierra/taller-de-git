@@ -1,5 +1,7 @@
 <?php
 // Autor: Gabriel Sierra <gabriel@prueba.com>
+require('HolaMundo.php');
+
 print "Introduce tu nombre:";
 $nombre = trim(fgets(STDIN));
-@print "Hola, {$nombre}\n";
+print new HolaMundo($nombre);
